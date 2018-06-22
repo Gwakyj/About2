@@ -1,0 +1,272 @@
+* {margin:0; padding: 0;}
+
+body{ 
+  background-color: #bbbba8;
+}
+
+nav {
+  width: 1400px; height: 300px; 
+  margin: auto; z-index: 9999; 
+  font-family: "bodoni", serif;  
+  position: absolute;  
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+footer{
+  position: relative;
+  width: 100%;
+}
+
+A:link {
+  text-decoration: none;
+  font-family: "yoon";
+  font-color: #3a3434;}
+
+A:link    {color:#3a3434;text-decoration:none;} /* 아직 방문하지 않은경우 */
+A:visited {color:#3a3434; text-decoration:none; } /* 한번 이상 방문한 링크 처리 */
+A:active  {color:#3a3434; text-decoration:none; }/* 마우스로 클릭하는 순간 */
+A:hover  {color:#3a3434; text-decoration:none; } /* 마우스 링크 위 올려 놓았을때 */
+
+.bottom {
+  position: relative;
+  background-color: rgba(58,52,52,0.5);
+  height: 200px; width: 100%;
+}
+
+.p{
+  float: left;
+  position: relative;
+  /*background-color: red;*/
+  font-family: "hel"; font-size: 1.5em;
+  color: #3a3434;
+  top: 50px; left: 230px;
+  width: 100px;
+}
+#p{
+  position: absolute;
+  /*background-color: red;*/
+  font-family: "yoon"; font-size: 0.6em;
+  color: #3a3434;
+  top: 50px; left: 0px;
+  width: 300px;
+  line-height: 1.9em;
+}
+
+.p1{
+  float: left;
+  position: relative;
+  /*background-color: red;*/
+  font-family: "hel"; font-size: 1.5em;
+  color: #3a3434;
+  top: 50px; left: 430px;
+  width: 100px;
+}
+
+#p1 {
+  float: left;
+  position: relative;
+  font-family: "yoon"; font-size: 0.6em;
+  color: #3a3434;
+  top: 0px; left: 150px;
+  width:50px;
+  line-height: 1.9em;
+
+}
+
+#p2{
+  float: left;
+  position: absolute;
+  font-family: "yoon"; font-size: 0.6em;
+  color: #3a3434;
+  top: 0px; left: 300px;
+  width: 400px;
+  line-height: 1.9em;
+}
+
+#p3{
+  float: left;
+  position: absolute;
+  font-family: "yoon"; font-size: 0.6em;
+  color: #3a3434;
+  top: 0px; left: 430px;
+  width: 50px;
+  line-height: 1.9em;
+}
+
+.p4{
+  float: right;
+  position: relative;
+  font-family: "hel"; font-size: 1.0em;
+  color: #3a3434;
+  right: 300px; top: 100px;
+  width: 50px;
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 1400px;
+}
+
+.back {margin: auto;}
+
+.main ul {
+  list-style: none; float: right; 
+  padding-right: 100px; padding-top: 50px;
+}
+
+.main il a {
+  font-weight: bold; font-size: 1.3em;
+  text-decoration: none; 
+  color: #3a3434; 
+  padding: 25px;
+}
+
+.main il a:hover {color: #e7e3cd}
+
+#back1{ 
+  background: url('./img/b2.png'); 
+  background-size: 100% auto; 
+  width:1400px; height: 798px; 
+}
+
+#logo {
+  width: 60px; height: 54px; 
+  float: left; 
+  padding-top: 30px; padding-left: 50px;
+}
+
+.container { 
+  max-width: 1400px; height: 798px;
+  position: relative; overflow: hidden;
+}
+
+.contain { 
+  color: #413636;
+  position: relative; 
+  width: 700px; 
+  top: 360px; left: 428px; 
+  font-family: "yoon"; font-size: 0.9em; 
+  line-height: 23pt; letter-spacing: 2.3px; 
+  text-align: right; 
+  animation: fadeIn 3s, 1;
+}
+
+
+
+.contain0 {
+  color: #413636;
+  position: absolute; 
+  top: 120px; left: 210px; 
+  font-family: "hel"; font-size: 4.3em; 
+  line-height: 55pt; letter-spacing: 3.8px;
+}
+
+.box:active span {
+  background-color: red;
+  animation-name: bounceIn;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+.main ul {
+  list-style: none;
+   float: right; 
+   font-family: "bodoni", serif; 
+   padding-right: 100px; padding-top: 50px;
+}
+
+.main il a {
+  font-weight: bold; font-size: 1.3em;
+  text-decoration: none; 
+  font-family: "bodoni", serif; 
+  color: #3a3434; padding: 25px;
+}
+
+.main il a:hover {color: #868370;}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes bounceIn {
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.bounceIn {
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+}
+
+@font-face {font-family: "yoon"; src:url("./font/yoon.otf") format("opentype"); }
+@font-face {font-family: "bodoni"; src:local, url("/font/bodoni.ttf") format("truetype");}
+@font-face {font-family: "hel"; src:url("./font/hel.otf") format("opentype");}
